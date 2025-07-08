@@ -1,0 +1,65 @@
+11:08:50 PM: Netlify Build                                                 
+11:08:50 PM: ────────────────────────────────────────────────────────────────
+11:08:50 PM: ​
+11:08:50 PM: ❯ Version
+11:08:50 PM:   @netlify/build 34.0.0
+11:08:50 PM: ​
+11:08:50 PM: ❯ Flags
+11:08:50 PM:   accountId: 67fd8e39222fc12e01f366b4
+11:08:50 PM:   baseRelDir: true
+11:08:50 PM:   buildId: 686d509c62e047769cb196cc
+11:08:50 PM:   deployId: 686d509c62e047769cb196ce
+11:08:51 PM: ​
+11:08:51 PM: ❯ Current directory
+11:08:51 PM:   /opt/build/repo/client
+11:08:51 PM: ​
+11:08:51 PM: ❯ Config file
+11:08:51 PM:   No config file was defined: using default values.
+11:08:51 PM: ​
+11:08:51 PM: ❯ Context
+11:08:51 PM:   production
+11:08:51 PM: ​
+11:08:51 PM: ❯ Installing extensions
+11:08:51 PM:    - neon
+11:09:38 PM: Failed during stage 'building site': Build script returned non-zero exit code: 2
+11:09:36 PM: ​
+11:09:36 PM: ❯ Loading extensions
+11:09:36 PM:    - neon
+11:09:37 PM: ​
+11:09:37 PM: Build command from Netlify app                                
+11:09:37 PM: ────────────────────────────────────────────────────────────────
+11:09:37 PM: ​
+11:09:37 PM: $ npm run build
+11:09:37 PM: npm error code ENOENT
+11:09:37 PM: npm error syscall open
+11:09:37 PM: npm error path /opt/build/repo/client/package.json
+11:09:37 PM: npm error errno -2
+11:09:37 PM: npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open '/opt/build/repo/client/package.json'
+11:09:37 PM: npm error enoent This is related to npm not being able to find a file.
+11:09:37 PM: npm error enoent
+11:09:37 PM: npm error A complete log of this run can be found in: /opt/buildhome/.npm/_logs/2025-07-08T17_09_37_578Z-debug-0.log
+11:09:37 PM: ​
+11:09:37 PM: "build.command" failed                                        
+11:09:37 PM: ────────────────────────────────────────────────────────────────
+11:09:37 PM: ​
+11:09:37 PM:   Error message
+11:09:37 PM:   Command failed with exit code 254: npm run build
+11:09:37 PM: ​
+11:09:37 PM:   Error location
+11:09:37 PM:   In Build command from Netlify app:
+11:09:37 PM:   npm run build
+11:09:37 PM: ​
+11:09:37 PM:   Resolved config
+11:09:37 PM:   build:
+11:09:37 PM:     base: /opt/build/repo/client
+11:09:37 PM:     command: npm run build
+11:09:37 PM:     commandOrigin: ui
+11:09:37 PM:     environment:
+11:09:37 PM:       - SERVICE_ROLE
+11:09:37 PM:       - SUPABASE_ANON_KEY
+11:09:37 PM:       - SUPABASE_URL
+11:09:37 PM:     publish: /opt/build/repo/client/public
+11:09:37 PM:     publishOrigin: ui
+11:09:38 PM: Build failed due to a user error: Build script returned non-zero exit code: 2
+11:09:38 PM: Failing build: Failed to build site
+11:09:38 PM: Finished processing build request in 53.189s

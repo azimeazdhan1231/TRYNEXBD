@@ -1,0 +1,64 @@
+I have an existing TryNex Lifestyle e-commerce website that is deployed on Netlify (frontend) and Render (backend). The database is Supabase, and the project is working in real-time.
+
+Now, I want you to enhance, clean up, and finalize the full system by keeping all connections the same, improving the admin panel, and making the full website responsive and ultra-modern.
+
+Here is everything you must follow and implement:
+
+1. ✅ **KEEP EXISTING CONNECTIONS INTACT**
+   - Do NOT change the Supabase database URL or API key.
+   - Supabase live connection must be maintained as-is.
+
+2. 🛠️ **BUG FIXES AND FUNCTIONALITY**
+   - Fix the issue where **products show in count (52)** in admin panel but do not appear on the Products page or admin panel product list.
+   - Fix homepage where **Featured Products** are not displaying properly.
+   - Enable filtering and search functionality in the Products page.
+   - Ensure real-time sync: Any product changes from the admin panel should instantly reflect on the frontend.
+
+3. 💼 **ADMIN PANEL ENHANCEMENTS**
+   - Add full control over:
+     - Products (add, edit, delete, feature toggle)
+     - Promo codes and vouchers (add/edit/delete)
+     - Offers / popup banners management
+     - Homepage sections (title, hero section, footer content)
+     - Order status and real-time updates
+   - Allow admin to add **new admin users** and set their credentials.
+   - **Trigger access to admin panel** by clicking any footer icon 5 times and entering the password: `Amits@12345`.
+
+4. 💰 **PRODUCT CATALOG & PRICING (UPDATE & SHOW)**
+   Add the following updated product pricing to the database and show on website with high-quality images:
+
+   **T-Shirts:**
+   - Basic cotton: 400৳  
+   - Premium cotton: 550৳  
+   - Premium drop-shoulder cotton: 600৳
+
+   **Mugs:**
+   - Regular: 650৳  
+   - 2-piece mugs with free box: 1200৳  
+   - Love shape mug: 680৳  
+   - Magic mug: 750৳
+
+   **Picture Frames:**
+   - Custom design without box: from 1100৳  
+   - With premium box: 1300৳
+
+   **Water Tumblers (customizable):**
+   - 780৳ each
+
+5. 💳 **PAYMENT AND ORDER FLOW**
+   - Every customer order must require a **100৳ advance payment** via:
+     - bKash / Nagad / Upay: 01747292277
+   - Customers should be redirected to WhatsApp for confirmation:
+     - WhatsApp number: 01940689487
+   - Show order summary and live order tracking status to the customer.
+   - Admin must be able to update the status and notes of any order in real-time.
+
+6. 📦 **FRONTEND IMPROVEMENTS**
+   - Add a **"View Details"** modal/page for each product card.
+   - Responsive design (perfectly mobile and desktop-friendly).
+   - Modern UI with Tailwind CSS (dark/light mode optional).
+   - Make sure all components load correctly with fallback handling.
+
+7. 📁 **FILES & STRUCTURE FORMAT**
+   Ensure the project is in this format:
+

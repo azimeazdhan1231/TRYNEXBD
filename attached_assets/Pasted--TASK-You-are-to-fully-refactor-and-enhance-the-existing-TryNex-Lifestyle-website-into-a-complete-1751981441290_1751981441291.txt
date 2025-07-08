@@ -1,0 +1,192 @@
+🔧 TASK:
+You are to fully refactor and enhance the existing TryNex Lifestyle website into a complete, dynamic, admin-controllable web application, with frontend hosted on Netlify and backend on Render using Supabase.
+
+📁 STRUCTURE TO FOLLOW:
+pgsql
+Copy
+Edit
+trynex-lifestyle/
+├── frontend/
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── App.js
+│   │   └── AdminPanel.js
+│   ├── package.json
+│   ├── tailwind.config.js
+│   └── netlify.toml
+├── backend/
+│   ├── server.js
+│   ├── package.json
+│   └── .env.example
+├── README.md
+💡 FEATURES TO INCLUDE:
+1. 🌐 Website Structure:
+Clone and rebuild the existing https://trynex-lifestyle.netlify.app structure using React + Tailwind CSS.
+
+Include pages: Homepage, Products page, About, Contact, Track Order, Return Policy, Rules & Regulations.
+
+2. 🛠️ Backend (Node.js + Express):
+Create a backend in /backend/ with Express.js.
+
+Connect to Supabase for data storage.
+
+Use JWT for authentication.
+
+Environment variables stored and used properly.
+
+All live updates should reflect instantly via Supabase sync.
+
+🧠 Admin Panel Functionality:
+🔐 Admin panel accessible by pressing a button 5 times.
+
+Requires password: Amits@12345.
+
+Admin panel must allow:
+
+Add/Edit/Delete products
+
+Add/Edit/Delete featured products
+
+Update promotional and popup offers
+
+View, update, and manage all orders in real time
+
+Add new admin access (email/password/role)
+
+Change homepage title, hero image, and footer text
+
+Control site name (e.g., from "TryNex" to something else)
+
+💳 Payment & Order:
+Card modal must include instructions:
+
+"৳100 advance required to confirm your order"
+
+Payment options: Bkash / Nagad / Upay at 01747292277
+
+Add WhatsApp redirect button to: 01940689487
+
+Orders should be submitted to the backend and:
+
+Stored in Supabase
+
+Synced instantly to the admin dashboard
+
+Admin should be able to update order status from the panel
+
+Each product card must include a "View Details" option
+
+📦 Supabase Setup:
+env
+Copy
+Edit
+NODE_ENV=production
+JWT_SECRET=Amits@12345
+SUPABASE_URL=https://wifsqonbnfmwtqvupqbk.supabase.co
+SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndpZnNxb25ibmZtd3RxdnVwcWJrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTE1ODAyNjMsImV4cCI6MjA2NzE1NjI2M30.A7o3vhEaNZb9lmViHA_KQrwzKJTBWpsD6KbHqkkput0
+ADMIN_EMAIL=admin@trynex.com
+ADMIN_PASSWORD=admin123
+WHATSAPP_NUMBER=01940689487
+🚀 Deployment Requirements:
+✅ Frontend deployable directly to Netlify with GitHub integration
+
+✅ Backend deployable to Render with .env variables set
+
+✅ All files must be static-ready for Netlify (HTML/CSS/JS)
+
+✅ Must provide _redirects file for SPA routing (React)
+
+🔁 Final Notes:
+Maintain current Supabase database structure
+
+Sync all live updates between backend, frontend, and database
+
+Only touch what is requested. Do not break working features
+
+Keep the repo structure clean, modular, and production-ready
+
+✅ After completing, export the full ready-to-deploy code and test both frontend and backend flows before delivery.
+
+Let me know if you want me to help write a .env.example, a Netlify or Render deployment guide, or test the frontend after build.
+
+Yes, ✅ you absolutely can manage your full website using the setup you just described — if it's properly built and deployed. Let’s break it down clearly so you understand how it works and what you can manage:
+
+🔧 With This Setup, You Can Fully Manage:
+🧑‍💻 1. Frontend (React + Netlify)
+Hosted on Netlify = Fast and reliable
+
+GitHub integration = Auto-deploy every time you push code
+
+Tailwind CSS + modular React = You can easily edit UI/UX
+
+_redirects file = Ensures your SPA (Single Page App) routing works properly (e.g., /product/123 loads directly)
+
+✅ Fully customizable
+✅ Super fast to update
+✅ Visually appealing and responsive
+
+📦 2. Backend (Node.js on Render + Supabase)
+Node/Express handles admin requests and logic
+
+Connected to Supabase for database (products, orders, users, etc.)
+
+Supabase provides real-time sync, so any updates in the admin panel appear instantly on the frontend
+
+JWT-based admin authentication = secure access
+
+✅ Live data updates
+✅ CRUD operations from admin panel
+✅ Payment and order sync
+✅ Add/edit products, coupons, offers, banners, more
+
+🧠 3. Admin Panel Control Includes:
+Add/edit/delete products and product images
+
+Add featured items, popup offers, banners
+
+Add/update coupon codes
+
+Manage and update orders (status, notes, payment)
+
+Control homepage content (title, hero, footer)
+
+Add new admin login
+
+Secure login with password
+
+Payment info & WhatsApp link available
+
+Track every customer order from the panel
+
+✅ Think of it like a mini CMS (Content Management System)
+✅ Designed fully for non-technical users to control the site
+
+🔁 4. Everything Syncs in Realtime
+Supabase makes data available instantly to all pages
+
+React fetches fresh data using APIs and updates UI on the fly
+
+Admin changes something → frontend reflects it instantly
+
+Works on mobile and desktop (if designed with responsive breakpoints)
+
+📂 5. Static Hosting & Cloud Functions
+Frontend: Static files on Netlify
+
+Backend: API routes hosted on Render
+
+No need for expensive backend servers
+
+Environment variables keep sensitive data safe
+
+✅ So, Yes — You Can:
+Manage your business end-to-end from the admin panel
+
+Customize products, offers, orders, images, site title
+
+Deploy updates with just a push to GitHub
+
+Keep everything blazing fast with React + Tailwind + Netlify
+
+Scale up in the future (add more roles, more pages, etc.)
